@@ -79,7 +79,6 @@ console.log(`The result is: ${division}`);
 // 4. calculate the modulo
 // 5.print the Result
 // 6. end
-
 var e = Number(prompt("Write a number:"));
 var f = Number(prompt("Write a number:"));
 const modulo =  e % f;
@@ -105,12 +104,13 @@ console.log(`The result is: ${modulo}`);
 // 4. concatenate the two phrases
 // 5.print the Result
 // 6. end
-
+function concatenatePhrases(){
  let  names = "BeCode";
 let greet = "Hello";
 const greetNames = greet + " " + names ;
 console.log(greetNames);
-
+}
+concatenatePhrases();
 // III - VAT
 // Write an algorithm which receives a price without VAT and returns the price with VAT with a rate of 21%.
 // 1. start
@@ -119,12 +119,13 @@ console.log(greetNames);
 // 5.print the Result
 // 6. end
 
-function CalculateVat (price){
+function CalculateVat (){
+    var price = Number(prompt("Write the price of the article without VAT:"));
     let vatValue = price * 0.21;
     let pricewithVat = price + vatValue;
    return pricewithVat;
 }
-console.log(CalculateVat(200));
+console.log(CalculateVat());
 
 // V - surface of a circle
 // Write an algorithm which receives the radius of a circle and calculate its surface.(A = π r²)
@@ -132,11 +133,12 @@ console.log(CalculateVat(200));
 // 2. calculate the surface
 // 3.print the Result
 // 4. end
-function calculateRadius(radius){
+function calculateRadius(){
+    var radius = Number(prompt("Write the radius of the circle "));
     let surface = Math.PI * radius ** 2;
     return surface;
 }
-console.log(calculateRadius(15));
+console.log(calculateRadius());
 
 // V - conversion of time to seconds
 
@@ -149,9 +151,12 @@ console.log(calculateRadius(15));
 // 4.the Result
 // 5. end
 
-function getSeconds (hour, minutes, seconds){
-
+function getSeconds (){
+    var hour = Number(prompt("Write the hour:"));
+    var minutes = Number(prompt("Write the minutes:"));
+    var seconds = Number(prompt("Write the seconds:"))
 const totalSeconds = (hour * 3600) + (minutes * 60) + seconds;
 
  return("Number of seconds since midnight: " + totalSeconds);
 }
+console.log(getSeconds());
