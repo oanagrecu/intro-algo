@@ -104,34 +104,67 @@ throwTheDices();
 
 
 
-function writeTheDay(day){
-if (day == 1){
-    return "Today is Monday";
-}
-else if(day == 2){
-    return "Today is Tuesday";
-}
-else if (day == 3){
-    return  "Today is Wednesday";
-}
-else if (day == 4){
-    return "Today is Thursday";
-}
-else if(day == 5){
-    return "Today is Friday";
-}
-else if(day == 6){
-    return "Today is Saturday";
-}
-else if ( day == 7){
-    return "Today is Sunday";
-}
-else{
-    return "Write a number between 1 and 7";
-}
-}
-console.log(writeTheDay(6));
+// function writeTheDay(){
+//     let day = Number(prompt("Enter a number for a day of the week:"));
+// if (day == 1){
+//     return "Today is Monday";
 
+// }
+// else if(day == 2){
+//     return "Today is Tuesday";
+// }
+// else if (day == 3){
+//     return  "Today is Wednesday";
+// }
+// else if (day == 4){
+//     return "Today is Thursday";
+// }
+// else if(day == 5){
+//     return "Today is Friday";
+// }
+// else if(day == 6){
+//     return "Today is Saturday";
+// }
+// else if ( day == 7){
+//     return "Today is Sunday";
+// }
+// else{
+//     return "Write a number between 1 and 7";
+// }
+// }
+// writeTheDay();
+function evaluateTheDay() {
+    var dayNumber = Number(prompt("Enter a number between 1 and 7:  "));
+    
+    switch (dayNumber) {
+      case 1:
+        console.log("Today is Monday");
+        break;
+      case 2:
+        console.log("Today is Tuesday");
+        break;
+      case 3:
+        console.log("Today is Wednesday");
+        break;
+      case 4:
+        console.log("Today is Thursday");
+        break;
+      case 5:
+        console.log("Today is Friday");
+        break;
+      case 6:
+        console.log("Today is Saturday");
+        break;
+        case 7:
+        console.log("Today is Sunday");
+        break;
+        default:
+        console.log("write a number between 1 and 7:  ");
+        break;
+    }
+  }
+  
+  evaluateTheDay();
 
 
 // // V - print shop
@@ -141,7 +174,7 @@ console.log(writeTheDay(6));
 // const numOfcopies = Number(prompt("Enter the number of copies:"));
 
 function calculateThePrice(){
-    const numOfcopies = Number(prompt("Enter the number of copies:"));
+    let numOfcopies = Number(prompt("Enter the number of copies:"));
     let totalPrice = 0;
 
     if(numOfcopies <= 10 ){
